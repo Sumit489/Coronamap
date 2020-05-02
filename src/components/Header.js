@@ -6,14 +6,14 @@ import Container from 'components/Container';
 const Header = () => {
   return (
     <header>
-      <Container type="content">
+      <Container >
         <p>World Map With Covid-19 data</p>
-        <ul>
-          <li>
+        <ul  className="navbar-nav mr-auto">
+          <li className="nav-item">
             <Link to="/">Home</Link>
           </li>
-          <li>
-            <Link to="/page-2/"></Link>
+          <li className="nav-item">
+            <Link to="/page-2/">Protective Measures</Link>
           </li>
         </ul>
       </Container>

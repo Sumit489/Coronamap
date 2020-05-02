@@ -159,7 +159,7 @@ const geoJsonLayers = new L.GeoJSON(geoJson, {
 
     const html = `
       <span class="icon-marker">
-        <span class="icon-marker-tooltip">
+        <span class="icon-marker-tooltip ">
           <h2>${country}</h2>
           <ul>
             <li><strong>Confirmed:</strong> ${cases}</li>
@@ -202,9 +202,9 @@ geoJsonLayers.addTo(map)
         <title>Home Page</title>
       </Helmet>
       <div className="tracker">
-      {/* <div  style={{ height: window.innerWidth >= 992 ? window.innerHeight : 400 }}> */}
+      
        <Map {...mapSettings} />
-       {/* </div> */}
+       
        <div className="tracker-stats">
         <ul>
       { dashboardStats.map(({ primary = {}, secondary = {} }, i) => {
@@ -234,17 +234,7 @@ geoJsonLayers.addTo(map)
 </div>
   
        </div>
-        
-      
-
-      {/* <Container type="content" className="text-center home-start">
-        <h2>Still Getting Started?</h2>
-        <p>Run the following in your terminal!</p>
-        <pre>
-          <code>gatsby new [directory] https://github.com/colbyfayock/gatsby-starter-leaflet</code>
-        </pre>
-        <p className="note">Note: Gatsby CLI required globally for the above command</p>
-      </Container> */}
+    
     </Layout>
   );
 };
